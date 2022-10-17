@@ -1,16 +1,32 @@
-# Microcontrollers examples
+## Documentation
+[ESP8266](https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/get-started/index.html)
 
-This repo has examples for uC 
-- ARM cortex M0, M3, M4, M7 from Texas Instruments and STMicroelectronics.
-- PIC 16, 18f
-- AVR 
-- ESP8266, ESP32
+## Create config
+`make menuconfig`
 
-## Tools
-- STM32CubeIDE
-- Code Composer Studio
-- Keil uVision
-- MPLABX
-- ATMEGAStudio
-- Espressif IDE
-- Eclipse CDT
+## Build project
+`make`
+
+## Flash project  
+`make flash`
+
+## Monitor
+`make monitor`
+
+boud rate for monitor 74880
+
+
+## Notes
+Before compiling validate minimum files path
+```
+${PWD} .
+│   CMakeLists.txt
+│   Makefile
+│   README.md
+│
+└───main
+        CMakeLists.txt
+        component.mk
+        hello_world_main.c
+
+```

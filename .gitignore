@@ -13,6 +13,9 @@
 *.axf
 *.htm
 *.hex
+*.cproject
+*.project
+*.old
 
 # Eclipse paths
 **/.metadata/
@@ -23,3 +26,7 @@
 **/RemoteSystemsTempFiles/
 **/dvt/
 **/build/
+
+**/.settings/
+**/build/
+**/main/
